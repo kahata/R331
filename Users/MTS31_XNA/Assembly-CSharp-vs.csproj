@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+	<Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+	<Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+	<ProductVersion>10.0.20506</ProductVersion>
+	<SchemaVersion>2.0</SchemaVersion>
+	<ProjectGuid>{748E417F-6F8D-2180-7AC0-C966B5A9FA5D}</ProjectGuid>
+	<OutputType>Library</OutputType>
+	<AppDesignerFolder>Properties</AppDesignerFolder>
+	<RootNamespace></RootNamespace>
+	<AssemblyName>Assembly-CSharp</AssemblyName>
+	<TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+	<FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+	<DebugSymbols>true</DebugSymbols>
+	<DebugType>full</DebugType>
+	<Optimize>false</Optimize>
+	<OutputPath>Temp\bin\Debug\</OutputPath>
+	<DefineConstants>DEBUG;TRACE;UNITY_STANDALONE_WIN;ENABLE_MICROPHONE;ENABLE_TEXTUREID_MAP;ENABLE_AUDIO_FMOD;UNITY_STANDALONE;ENABLE_MONO;ENABLE_TERRAIN;ENABLE_SUBSTANCE;ENABLE_GENERICS;ENABLE_MOVIES;ENABLE_WWW;ENABLE_IMAGEEFFECTS;ENABLE_WEBCAM;RENDER_SOFTWARE_CURSOR;ENABLE_NETWORK;ENABLE_PHYSICS;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_SHADOWS;ENABLE_AUDIO;ENABLE_DUCK_TYPING;ENABLE_SINGLE_INSTANCE_BUILD_SETTING;UNITY_4_2_2;UNITY_4_2;ENABLE_PROFILER;UNITY_EDITOR;UNITY_EDITOR_WIN</DefineConstants>
+	<ErrorReport>prompt</ErrorReport>
+	<WarningLevel>4</WarningLevel>
+	<NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+	<DebugType>pdbonly</DebugType>
+	<Optimize>true</Optimize>
+	<OutputPath>Temp\bin\Release\</OutputPath>
+	<DefineConstants>TRACE</DefineConstants>
+	<ErrorReport>prompt</ErrorReport>
+	<WarningLevel>4</WarningLevel>
+	<NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+	<Reference Include="System" />
+    <Reference Include="System.XML" />
+	<Reference Include="System.Core" />
+	<Reference Include="UnityEngine">
+	  <HintPath>C:/Program Files (x86)/Unity/Editor/Data/Managed/UnityEngine.dll</HintPath>
+	</Reference>
+	<Reference Include="UnityEditor">
+	  <HintPath>C:/Program Files (x86)/Unity/Editor/Data/Managed/UnityEditor.dll</HintPath>
+	</Reference>
+  </ItemGroup>
+  <ItemGroup>
+     <Compile Include="Assets\Scripts\AudioSourceController.cs" />
+     <Compile Include="Assets\Scripts\DrawQueue.cs" />
+     <Compile Include="Assets\Scripts\DrawSpriteCall.cs" />
+     <Compile Include="Assets\Scripts\DrawStringCall.cs" />
+     <Compile Include="Assets\Scripts\XNAEmulator\Audio\SoundEffect.cs" />
+     <Compile Include="Assets\Scripts\XNAEmulator\Content\ContentManager.cs" />
+     <Compile Include="Assets\Scripts\XNAEmulator\DrawableGameComponent.cs" />
+     <Compile Include="Assets\Scripts\XNAEmulator\Framework.cs" />
+     <Compile Include="Assets\Scripts\XNAEmulator\Framework\EnumsFramework.cs" />
+     <Compile Include="Assets\Scripts\XNAEmulator\Framework\MathHelper.cs" />
+     <Compile Include="Assets\Scripts\XNAEmulator\Framework\Matrix.cs" />
+     <Compile Include="Assets\Scripts\XNAEmulator\Framework\Plane.cs" />
+     <Compile Include="Assets\Scripts\XNAEmulator\Framework\Point.cs" />
+     <Compile Include="Assets\Scripts\XNAEmulator\Framework\Quaternion.cs" />
+     <Compile Include="Assets\Scripts\XNAEmulator\Framework\Rectangle.cs" />
+     <Compile Include="Assets\Scripts\XNAEmulator\Framework\TitleContainer.cs" />
+     <Compile Include="Assets\Scripts\XNAEmulator\Framework\Vector2.cs" />
+     <Compile Include="Assets\Scripts\XNAEmulator\Framework\Vector3.cs" />
+     <Compile Include="Assets\Scripts\XNAEmulator\Framework\Vector4.cs" />
+     <Compile Include="Assets\Scripts\XNAEmulator\Game\Game.cs" />
+     <Compile Include="Assets\Scripts\XNAEmulator\Game\GameServiceContainer.cs" />
+     <Compile Include="Assets\Scripts\XNAEmulator\Game\GameTime.cs" />
+     <Compile Include="Assets\Scripts\XNAEmulator\Game\GameWindow.cs" />
+     <Compile Include="Assets\Scripts\XNAEmulator\Game\GraphicsDeviceManager.cs" />
+     <Compile Include="Assets\Scripts\XNAEmulator\Game\UnityGameWindow.cs" />
+     <Compile Include="Assets\Scripts\XNAEmulator\GameComponent.cs" />
+     <Compile Include="Assets\Scripts\XNAEmulator\GameComponentCollection.cs" />
+     <Compile Include="Assets\Scripts\XNAEmulator\GameComponentCollectionEventArgs.cs" />
+     <Compile Include="Assets\Scripts\XNAEmulator\Graphics\Color.cs" />
+     <Compile Include="Assets\Scripts\XNAEmulator\Graphics\Effect\Effect.cs" />
+     <Compile Include="Assets\Scripts\XNAEmulator\Graphics\EnumsGraphics.cs" />
+     <Compile Include="Assets\Scripts\XNAEmulator\Graphics\GraphicsDevice.cs" />
+     <Compile Include="Assets\Scripts\XNAEmulator\Graphics\GraphicsResource.cs" />
+     <Compile Include="Assets\Scripts\XNAEmulator\Graphics\PackedVector\IPackedVector.cs" />
+     <Compile Include="Assets\Scripts\XNAEmulator\Graphics\SpriteBatch.cs" />
+     <Compile Include="Assets\Scripts\XNAEmulator\Graphics\SpriteFont.cs" />
+     <Compile Include="Assets\Scripts\XNAEmulator\Graphics\States\BlendState.cs" />
+     <Compile Include="Assets\Scripts\XNAEmulator\Graphics\States\DepthStencilState.cs" />
+     <Compile Include="Assets\Scripts\XNAEmulator\Graphics\States\RasterizerState.cs" />
+     <Compile Include="Assets\Scripts\XNAEmulator\Graphics\States\SamplerState.cs" />
+     <Compile Include="Assets\Scripts\XNAEmulator\Graphics\Texture2D.cs" />
+     <Compile Include="Assets\Scripts\XNAEmulator\Graphics\Viewport.cs" />
+     <Compile Include="Assets\Scripts\XNAEmulator\IDrawable.cs" />
+     <Compile Include="Assets\Scripts\XNAEmulator\IGameComponent.cs" />
+     <Compile Include="Assets\Scripts\XNAEmulator\IUpdateable.cs" />
+     <Compile Include="Assets\Scripts\XNAEmulator\Input\EnumsInput.cs" />
+     <Compile Include="Assets\Scripts\XNAEmulator\Input\GamePad.cs" />
+     <Compile Include="Assets\Scripts\XNAEmulator\Input\GamePadButtons.cs" />
+     <Compile Include="Assets\Scripts\XNAEmulator\Input\GamePadState.cs" />
+     <Compile Include="Assets\Scripts\XNAEmulator\Input\GamePadThumbSticks.cs" />
+     <Compile Include="Assets\Scripts\XNAEmulator\Input\Keyboard.cs" />
+     <Compile Include="Assets\Scripts\XNAEmulator\Input\KeyboardState.cs" />
+     <Compile Include="Assets\Scripts\XNAEmulator\Input\Touch\EnumsTouch.cs" />
+     <Compile Include="Assets\Scripts\XNAEmulator\Input\Touch\TouchCollection.cs" />
+     <Compile Include="Assets\Scripts\XNAEmulator\Input\Touch\TouchLocation.cs" />
+     <Compile Include="Assets\Scripts\XNAEmulator\Input\Touch\TouchPanel.cs" />
+     <Compile Include="Assets\Scripts\XNAEmulator\Media\MediaPlayer.cs" />
+     <Compile Include="Assets\Scripts\XNAEmulator\Media\Song.cs" />
+     <Compile Include="Assets\Scripts\XNAGame\Game1.cs" />
+     <Compile Include="Assets\Scripts\XNALauncher.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+	   Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  
+</Project>
